@@ -1,0 +1,160 @@
+@font-face {
+  font-family: Hanken Grotesk;
+  src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+  margin: 0;
+  padding: 0%;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(224deg, 25%, 90%);
+  font-family: "Hanken Grotesk";
+}
+
+p {
+  font-size: 18px;
+  color: hsl(221deg, 100%, 96%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1rem 1rem hsl(234deg, 50%, 90%);
+  width: fit-content;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 2rem;
+  position: absolute;
+  top: 25%;
+  right: 25%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto 1rem;
+}
+
+.info {
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+  text-align: center;
+  width: 20rem;
+  border-radius: 2rem;
+}
+.info .circle {
+  background-image: linear-gradient(hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  align-self: center;
+}
+.info .circle div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.info .circle div .big {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+.info .circle div .small {
+  margin: 0;
+}
+.info #text {
+  margin: 0 2rem;
+  padding-bottom: 2rem;
+}
+
+.summary {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 2rem;
+  padding: 0 2rem;
+}
+.summary h2 {
+  color: hsl(224deg, 30%, 27%);
+}
+.summary .pill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin: 0.5rem 0;
+}
+.summary .pill .dark {
+  margin-left: 3rem;
+}
+.summary .pill .dark .score {
+  color: black;
+}
+.summary .pill .dark p {
+  margin-right: 0.5rem;
+  color: gray;
+}
+.summary .pill .colored {
+  margin-right: 2rem;
+}
+.summary .pill .colored p {
+  margin-left: 0.5rem;
+}
+
+#Reaction {
+  background-color: hsla(0deg, 100%, 67%, 0.1);
+}
+#Reaction .colored p {
+  color: hsl(0deg, 100%, 67%);
+}
+
+#Memory {
+  background-color: hsla(39deg, 100%, 56%, 0.1);
+}
+#Memory .colored p {
+  color: hsl(39deg, 100%, 56%);
+}
+
+#Verbal {
+  background-color: hsla(166deg, 100%, 37%, 0.1);
+}
+#Verbal .colored p {
+  color: hsl(166deg, 100%, 37%);
+}
+
+#Visual {
+  background-color: hsla(234deg, 85%, 45%, 0.1);
+}
+#Visual .colored p {
+  color: hsl(234deg, 85%, 45%);
+}
+
+button {
+  margin: 1.5rem 0;
+  padding: 1rem 1rem;
+  background-color: hsl(224deg, 30%, 27%);
+  border: none;
+  border-radius: 2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+button:hover {
+  background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    position: none;
+    top: auto;
+    right: auto;
+  }
+  .info {
+    border-radius: 0 0 2rem 2rem;
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

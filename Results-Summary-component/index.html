@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="info column">
+        <p>Your Result</p>
+        <div class="circle column">
+          <div>
+            <h1 class="big">76</h1>
+            <p class="small">of 100</p>
+          </div>
+        </div>
+        <div class="column">
+          <h2>Great</h2>
+          <p id="text">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+
+      <div class="summary column">
+        <h2>Summary</h2>
+        <div id="Reaction" class="pill">
+          <div class="row colored">
+            <img class="icon" />
+            <p class="category"></p>
+          </div>
+          <div class="row dark">
+            <p class="score"></p>
+            <p>/ 100</p>
+          </div>
+        </div>
+        <div id="Memory" class="pill">
+          <div class="row colored">
+            <img class="icon" />
+            <p class="category"></p>
+          </div>
+          <div class="row dark">
+            <p class="score"></p>
+            <p class="score-full">/ 100</p>
+          </div>
+        </div>
+
+        <div id="Verbal" class="pill">
+          <div class="row colored">
+            <img class="icon" />
+            <p class="category"></p>
+          </div>
+          <div class="row dark">
+            <p class="score"></p>
+            <p>/ 100</p>
+          </div>
+        </div>
+        <div id="Visual" class="pill">
+          <div class="row colored">
+            <img class="icon" />
+            <p class="category"></p>
+          </div>
+          <div class="row dark">
+            <p class="score"></p>
+            <p>/ 100</p>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="data.js"></script>
+  </body>
+</html>
