@@ -1,0 +1,45 @@
+body {
+  background-color: hsl(200deg, 30%, 88%);
+  margin: 0%;
+  padding: 0%;
+}
+
+.center-container {
+  margin: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 20rem;
+  background-color: white;
+  padding-bottom: 2rem;
+  box-shadow: 1px 0.5rem 1rem hsl(0deg, 0%, 65%);
+  border-radius: 15px;
+}
+.card .image {
+  margin: 1rem;
+}
+.card .image #QRcode {
+  border-radius: 0.5rem;
+  max-width: 100%;
+}
+.card .text {
+  margin: 0 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.card .text h1 {
+  font-size: large;
+}
+.card .text p {
+  margin: 0 1rem;
+  font-size: 12px;
+  color: gray;
+}
+
+/*# sourceMappingURL=style.css.map */
