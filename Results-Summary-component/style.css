@@ -144,7 +144,7 @@ button:hover {
   background-image: linear-gradient(hsl(252deg, 100%, 67%), hsl(241deg, 81%, 54%));
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .container {
     flex-direction: column;
     position: none;
