@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  background-color: hsl(148, 38%, 91%);
+  margin: auto;
+  padding: 0%;
+  display: grid;
+  place-items: center;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  color: rgb(90, 90, 90);
+}
+
+#notification {
+  animation: identifier;
+  animation-duration: 1s;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #1b3e36;
+  position: absolute;
+  top: 2.75rem;
+  padding: 0.25rem 1rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Karla", sans-serif;
+  border-radius: 0.75rem;
+}
+#notification img {
+  width: 1rem;
+  position: relative;
+  top: 0.65rem;
+}
+#notification .messagesent {
+  padding: 0;
+  margin: 0;
+}
+#notification h4 {
+  margin-left: 0.5rem;
+  margin-bottom: 0;
+  justify-content: center;
+}
+#notification p {
+  font-size: 12px;
+  color: hsl(186, 15%, 59%);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 0 0.75rem 0;
+  color: hsl(187, 24%, 22%);
+}
+
+#form-container {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  flex-direction: column;
+  padding: 1rem;
+  width: 30rem;
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem;
+}
+
+#id {
+  flex-direction: column;
+  justify-content: left;
+}
+
+.space-between {
+  justify-content: space-evenly;
+}
+
+.left {
+  margin-left: 0.25rem;
+}
+
+.right {
+  margin-right: 0.25rem;
+}
+.right .input:checked {
+  border: 0.5rem solid hsl(169, 82%, 27%);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.error {
+  color: hsl(0, 66%, 54%) !important;
+  border-color: hsl(0, 66%, 54%) !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.even {
+  width: 50%;
+}
+
+.checkbox-checked {
+  width: 14px;
+  height: 14px;
+}
+
+.smallfont {
+  font-size: 12px;
+  margin: 0.5rem 0px;
+  color: rgb(90, 90, 90);
+}
+
+.radio {
+  font-size: 14px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.checkmargin {
+  margin: 0 0 0 1rem;
+  cursor: pointer;
+}
+
+#asterisk {
+  margin-left: 0.25rem;
+  color: hsl(169, 82%, 27%);
+}
+
+#consent {
+  margin: auto;
+  padding: auto;
+  width: 14px;
+  height: 15px;
+}
+
+#checkbox-switch {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0;
+  margin: 0.25rem 0;
+}
+
+textarea {
+  font-family: "Karla", sans-serif;
+  font-size: 13.2px;
+  height: 5rem;
+  resize: none;
+  padding: 0.5rem 1rem !important;
+  color: rgb(90, 90, 90);
+  line-height: 1.5;
+}
+
+.radiocenter {
+  display: flex;
+  align-items: center;
+}
+
+.radio-box {
+  background-color: hsl(148, 38%, 91%);
+}
+
+.radioimg {
+  width: 14px;
+  height: 14px;
+}
+
+#support:checked {
+  background-color: hsl(148, 38%, 91%);
+}
+
+button {
+  background-color: hsl(169, 82%, 27%);
+  margin: 1rem 0 0 0;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 2.25rem;
+  font-size: 0.75rem;
+  border: 0;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #1b3e36;
+  cursor: pointer;
+}
+
+.box {
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  font-size: 13px;
+  color: rgb(90, 90, 90);
+}
+
+.fixradiobutton {
+  margin: 0 0 0 0.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+input[type=radio] {
+  margin: 0;
+}
+
+#message {
+  text-wrap: wrap;
+}
+
+#message-error {
+  margin-bottom: 0;
+}
+
+input[type=checkbox] {
+  height: 16px;
+  width: 14px;
+}
+
+.box:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  background-color: hsl(148, 38%, 91%);
+}
+
+.box-clicked {
+  border: 1px solid hsl(169, 82%, 27%);
+  background-color: hsl(148, 38%, 91%);
+}
+
+.consentbox {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  or: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    background-color: hsl(148, 38%, 91%);
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Karla", sans-serif;
+    width: 100%;
+  }
+  #notification {
+    position: relative;
+  }
+  #form-container {
+    margin-top: 1.75rem;
+    width: 70%;
+    margin-bottom: auto;
+  }
+  .radiocenter {
+    width: auto;
+    margin: 0.5rem 0 !important;
+  }
+  .box {
+    margin-bottom: 1rem;
+  }
+  .extend {
+    width: 100%;
+  }
+  .left {
+    margin: 0;
+  }
+  .right {
+    margin: 0;
+  }
+  .row {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .message-box {
+    height: 13rem;
+  }
+  .consentcheck {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .consentbox {
+    display: flex !important;
+    margin: 0;
+    justify-content: space-between !important;
+    align-items: center;
+  }
+  .checkbox-switch {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

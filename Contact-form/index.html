@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div id="notification" class="hide flex column">
+      <div class="messagesent flex row">
+        <img src="./assets/images/icon-success-check.svg" />
+        <h4>Message Sent!</h4>
+      </div>
+      <div><p>Thanks for completing the form. We'll be in touch soon!</p></div>
+    </div>
+    <div id="form-container">
+      <div id="title">
+        <h2>Contact Us</h2>
+      </div>
+      <form id="form" class="center">
+        <div class="row space-between">
+          <div class="col even right extend">
+            <label class="smallfont" for="fname"
+              >First Name <span id="asterisk">*</span></label
+            >
+            <input
+              class="box"
+              oninput="validateFirst()"
+              type="text"
+              id="fname"
+              name="fname"
+            />
+            <label id="fname-error" class="error hide smallfont"
+              >This field is required</label
+            >
+          </div>
+
+          <div class="col even left extend">
+            <label class="smallfont" for="lname"
+              >Last Name <span id="asterisk">*</span></label
+            >
+            <input
+              class="box"
+              oninput="validateLast()"
+              type="text"
+              id="lname"
+              name="lname"
+            />
+            <label id="lname-error" class="error hide smallfont"
+              >This field is required</label
+            >
+          </div>
+        </div>
+        <div class="">
+          <div class="col">
+            <label class="smallfont" for="email"
+              >Email Address <span id="asterisk">*</span></label
+            >
+            <input
+              class="box"
+              oninput="validateEmail()"
+              type="email"
+              id="email"
+              name="email"
+            />
+            <div>
+              <label id="email-error" class="error hide smallfont"
+                >Please enter a valid email address</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col">
+            <label class="smallfont"
+              >Query Type <span id="asterisk">*</span></label
+            >
+            <div class="row space-between">
+              <div id="general-div" class="radiocenter box even right">
+                <div class="fixradiobutton">
+                  <input
+                    class="radio"
+                    type="radio"
+                    id="general"
+                    name="query"
+                    onclick="checkRadio()"
+                  />
+                  <img
+                    id="generalimg"
+                    class="radioimg hide"
+                    src="./assets/images/icon-radio-selected.svg"
+                  />
+                </div>
+                <label class="radio" for="general"> General Inquiry</label>
+              </div>
+              <div id="support-div" class="radiocenter box even left">
+                <div class="fixradiobutton">
+                  <input
+                    class="radio"
+                    type="radio"
+                    id="support"
+                    name="query"
+                    onclick="checkRadio()"
+                  />
+                  <img
+                    id="supportimg"
+                    class="radioimg hide"
+                    src="./assets/images/icon-radio-selected.svg"
+                  />
+                </div>
+                <label class="radio" for="support">Support Request</label>
+              </div>
+            </div>
+            <label id="query-error" class="error hide smallfont"
+              >Please select a query type</label
+            >
+          </div>
+        </div>
+        <div class="">
+          <div class="col messagearea">
+            <label class="smallfont" for="message"
+              >Message <span id="asterisk">*</span></label
+            >
+            <textarea
+              class="box message-box"
+              oninput="validateMessage()"
+              type="textarea"
+              id="message"
+              name="message"
+            ></textarea>
+            <label id="message-error" class="error hide smallfont"
+              >This field is required</label
+            >
+          </div>
+        </div>
+        <div class="consentcheck">
+          <div class="row consentbox">
+            <div id="checkbox-switch">
+              <input
+                class="custom-checkbox"
+                type="checkbox"
+                id="consent"
+                name="consent"
+              />
+              <img
+                id="checkboximg"
+                class="checkbox-checked hide"
+                src="./assets/images/icon-checkbox-check.svg"
+              />
+              <label class="checkmargin smallfont" for="consent"
+                >I consent to being contacted by the team
+                <span id="asterisk">*</span></label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="">
+            <label id="consent-error" class="error hide smallfont col"
+              >To submit this form, please consent to being contacted</label
+            >
+            <button
+              type="button"
+              onclick="validateEverything()"
+              id="button"
+              name="submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Juan Porraz</a>.
+    </div>
+  </body>
+</html>
