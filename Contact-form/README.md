@@ -33,23 +33,23 @@ Users should be able to:
 
 #### Desktop view
 
-![](./screenshots/desktop-view.png.jpg)
+![](./screenshots/desktop-view.png)
 
 #### Error view
 
-![](./screenshots/error-view.png.jpg)
+![](./screenshots/error-view.png)
 
 #### Filled view
 
-![](./screenshots/filled-view.png.jpg)
+![](./screenshots/filled-view.png)
 
 #### Success view
 
-![](./screenshots/success-view.png.jpg)
+![](./screenshots/success-view.png)
 
 #### Mobile view
 
-![](./screenshots/mobile-view.png.jpg)
+![](./screenshots/mobile-view.png)
 
 ### Links
 
