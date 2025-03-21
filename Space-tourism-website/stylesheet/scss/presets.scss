@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Barlow";
+  src: url(../../starter-code/assets/fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url(../../starter-code/assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Bellefair";
+  src: url(../../starter-code/assets/fonts/Bellefair/Bellefair-Regular.ttf);
+}
+
+$blue300: hsl(231, 77%, 90%);
+$blue900: hsl(230, 35%, 7%);
+
+.textpreset1 {
+  font-family: "Bellefair";
+  font-size: 144px;
+  line-height: 171.9%;
+  letter-spacing: 0px;
+}
+
+.textpreset2 {
+  font-family: "Bellefair";
+  font-size: 100px;
+  line-height: 114.6%;
+  letter-spacing: 0px;
+}
+.textpreset3 {
+  font-family: "Bellefair";
+  font-size: 56px;
+  line-height: 64.2%;
+  letter-spacing: 0px;
+}
+
+.textpreset4 {
+  font-family: "Bellefair";
+  font-size: 32px;
+  line-height: 36.7%;
+  letter-spacing: 0;
+}
+
+.textpreset5 {
+  font-family: "BarlowCondensed";
+  font-size: 28px;
+  line-height: 33.6%;
+  letter-spacing: 4px;
+}
+
+.textpreset6 {
+  font-family: "Bellefair";
+  font-size: 28px;
+  line-height: 32.1%;
+  letter-spacing: 0px;
+}
+
+.textpreset7 {
+  font-family: "BardlowCondensed";
+  font-size: 14px;
+  line-height: 16.8%;
+  letter-spacing: 2px;
+}
+
+.textpreset8 {
+  font-family: "BarlowCondensed";
+  font-size: 16px; //19.2%
+  line-height: 19.2%;
+  letter-spacing: 2px;
+}
+
+.textpreset9 {
+  font-family: "Barlow";
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

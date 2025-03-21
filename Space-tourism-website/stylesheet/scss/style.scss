@@ -1,0 +1,66 @@
+$blue300: hsl(231, 77%, 90%);
+$blue900: hsl(230, 35%, 7%);
+
+body {
+  background-image: url("../../starter-code/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+.before-main {
+  display: grid;
+  justify-content: center;
+  padding: 48px;
+  background-color: blue;
+}
+
+main {
+  width: 1110px;
+
+  div {
+    display: block;
+  }
+
+  section {
+    color: white;
+    margin: 48px;
+    padding: 0;
+    display: flex;
+
+    .empty {
+    }
+
+    .articlestuff {
+      display: grid;
+      align-items: normal;
+      max-width: 540px;
+    }
+
+    .top {
+      margin-bottom: 24px;
+      color: $blue300;
+      width: 100%;
+    }
+    .middle {
+      margin: 24px 0;
+      color: white;
+      width: 100%;
+    }
+    .bottom {
+      margin-top: 24px;
+      color: $blue300;
+      width: 100%;
+    }
+
+    .explore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      color: black;
+      background-color: white;
+      width: 272px;
+      height: 272px;
+    }
+  }
+}

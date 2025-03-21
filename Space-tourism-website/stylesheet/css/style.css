@@ -1,0 +1,57 @@
+body {
+  background-image: url("../../starter-code/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  margin: 0;
+}
+
+.before-main {
+  display: grid;
+  justify-content: center;
+  padding: 48px;
+  background-color: blue;
+}
+
+main {
+  width: 1110px;
+}
+main div {
+  display: block;
+}
+main section {
+  color: white;
+  margin: 48px;
+  padding: 0;
+  display: flex;
+}
+main section .articlestuff {
+  display: grid;
+  align-items: normal;
+  max-width: 540px;
+}
+main section .top {
+  margin-bottom: 24px;
+  color: hsl(231, 77%, 90%);
+  width: 100%;
+}
+main section .middle {
+  margin: 24px 0;
+  color: white;
+  width: 100%;
+}
+main section .bottom {
+  margin-top: 24px;
+  color: hsl(231, 77%, 90%);
+  width: 100%;
+}
+main section .explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: black;
+  background-color: white;
+  width: 272px;
+  height: 272px;
+}
+
+/*# sourceMappingURL=style.css.map */
