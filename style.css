@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(./fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+body {
+  background-color: #3b5f63;
+  color: white;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+body a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: "Rubik";
+  font-weight: 500;
+  margin: 2rem 6rem;
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+}
+.card-list .card {
+  width: 12rem;
+  margin: 1rem;
+  border-radius: 3%;
+  background-color: #87dfe6;
+  border: 0.25rem solid black;
+  box-shadow: 0.25rem 0.25rem black;
+}
+.card-list .card .cardimg {
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+}
+.card-list .card .cardimg img {
+  border-radius: 2%;
+  box-shadow: 0 0.25rem black;
+  object-fit: contain;
+  width: 100%;
+}
+.card-list .card .cardcaption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: small;
+  text-wrap: wrap;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
